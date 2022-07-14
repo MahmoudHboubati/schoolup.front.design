@@ -282,6 +282,7 @@ input.su-default.search-input:focus-visible {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  flex-wrap: wrap;
   padding-bottom: 20px;
 }
 
@@ -469,6 +470,18 @@ input.su-default.search-input:focus-visible {
   line-height: 10px;
 }
 
+.switch-small .switch-title {
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 18px;
+
+  letter-spacing: 0.12px;
+
+  color: var(--dark);
+}
+
 .switch-pool input {
   position: absolute;
   opacity: 0;
@@ -499,7 +512,7 @@ input.su-default.search-input:focus-visible {
 
 .switch .switch-pool.switch-no-shadow {
   box-shadow: none !important;
-  background: var(--bg-default);
+  background: var(--primary);
 }
 
 .switch .switch-pool.switch-no-shadow .switch-bubble {
@@ -549,7 +562,16 @@ input.su-default.search-input:focus-visible {
   cursor: pointer;
 }
 
-/** Switch en 
+.switch-small {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+  height: 2em;
+  width: 100%;
+}
+
+/** Switch end
 --------------------------------------------- */
 
 .avatar-card {
@@ -591,3 +613,31 @@ input.su-default.search-input:focus-visible {
 
   color: var(--gray);
 }
+
+/* utils */
+
+.d-flex {
+  display: flex;
+}
+
+.justify-content-between {
+  justify-content: space-between;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.mb-2 {
+  margin-bottom: 0.5rem;
+}
+
+/* utils end */
