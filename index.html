@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Schoolup</title>
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
@@ -396,11 +397,63 @@
             </div>
           </div>
         </div>
-        <!-- <div class="su-card">
-          <div class="su-card-header su-card-header-large">
-            
+        <div class="su-card su-card-rounded">
+          <div class="su-card-header">
+            <span>
+              <i class="fa-solid fa-cloud-bolt"></i>
+              Living Room Temperature
+            </span>
+            <div class="su-card-utils">
+              <div class="switch">
+                <span class="switch-title">ON</span>
+                <label class="switch-pool switch-no-shadow">
+                  <input type="checkbox" />
+                  <div class="switch-bubble"></div>
+                </label>
+              </div>
+            </div>
           </div>
-        </div> -->
+          <div class="su-card-body">
+            <div class="d-flex justify-content-center align-items-center gap-4">
+              <button class="su-btn su-btn-default su-btn-square">
+                <i class="fa-solid fa-minus"></i>
+              </button>
+              <div class="oval">
+                <div class="oval-middle">
+                  <div class="oval-middle-support">
+                    <div class="oval-center">
+                      <div class="oval-text">25℃</div>
+                      <div class="oval-text-light">Celsius</div>
+                    </div>
+                  </div>
+                  <img class="path-2" src="images/path-2.svg" alt="path 2" />
+                  <div class="oval-shadow"></div>
+                  <div class="oval-shadow-ligh"></div>
+                </div>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  version="1.1"
+                  class="oval-meter"
+                >
+                  <defs>
+                    <linearGradient id="GradientColor">
+                      <stop offset="0%" stop-color="#6F5CEA" />
+                      <stop offset="69.52%%" stop-color="#AE5BFF" />
+                      <stop offset="100%" stop-color="#F2946D" />
+                    </linearGradient>
+                  </defs>
+                  <circle cx="50%" cy="50%" r="105" stroke-linecap="round" />
+                </svg>
+                <div class="oval-title oval-half-title">15℃</div>
+                <div class="oval-title oval-quarter-title">25℃</div>
+                <div class="oval-title oval-quarter-to-title">05℃</div>
+              </div>
+              <button class="su-btn su-btn-square">
+                <i class="fa-solid fa-plus"></i>
+              </button>
+            </div>
+          </div>
+        </div>
       </div>
       <div class="panel-side">
         <div class="su-card">
@@ -528,5 +581,6 @@
         </div>
       </div>
     </main>
+    <footer>Mahmoud Hboubati :)</footer>
   </body>
 </html>
